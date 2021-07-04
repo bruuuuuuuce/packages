@@ -14,20 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          # pulls all commits (needed for lerna / semantic release to correctly version)
-          fetch-depth: "0"
       - uses: actions/setup-node@v2
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - name: Setup
         run: |
-          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+          git fetch --prune --unshallow --tags
           git config --global user.email "@bot"
           git config --global user.name "bot"
           npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-          npm config set scope "@matt-dunn"
+          npm config set scope "@straathof"
           npm config list
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
