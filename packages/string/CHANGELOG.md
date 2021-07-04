@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/bruuuuuuuce/packages/compare/@straathof/string@0.1.0...@straathof/string@0.1.1) (2021-07-04)
+
+
+### Bug Fixes
+
+* testing ci release ([a269767](https://github.com/bruuuuuuuce/packages/commit/a2697674d27c47c777f6fbb6dddcf039d655f5e3))
+
+
+
+
+
 # 0.1.0 (2021-07-04)
 
 
