@@ -2,11 +2,19 @@
   "name": "@straathof/string",
   "version": "0.0.0",
   "description": "assorted string utility functions",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "source": "src/index.ts",
   "author": "matt.straat@gmail.com",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "docs:build": "typedoc --out ../../dist/packages/string/docs src --excludePrivate --excludeInternal",
+    "build:types": "tsc -b tsconfig.build.json",
+    "build:js": "babel ./src -d lib --extensions \".ts,.tsx\" --ignore **/*.story.ts,**/*.spec.ts --root-mode upward",
+    "build": "yarn run build:js && yarn run build:types && yarn run docs:build"
   },
   "private": true
 }
