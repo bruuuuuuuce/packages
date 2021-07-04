@@ -33,7 +33,7 @@
     "lint": "eslint ./ --ext .jsx,.js,.ts,.tsx --fix",
     "build": "lerna exec --since --parallel -- yarn build",
     "build:all": "lerna exec --parallel -- yarn build",
-    "release": "lerna publish --yes --create-release=github",
+    "release": "lerna publish --yes --create-release=github --no-verify-access",
     "ci": "yarn run build",
     "cd": "yarn run release"
   },
