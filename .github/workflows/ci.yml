@@ -22,7 +22,9 @@ jobs:
 
     - name: Setup
       run: |
-        git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+        git fetch --prune --unshallow --tags
+        echo exit code $?
+        git tag --list
     - name: Install
       run: yarn install --frozen-lockfile
 
