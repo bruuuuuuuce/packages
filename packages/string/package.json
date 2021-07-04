@@ -1,0 +1,12 @@
+{
+  "name": "@straathof/string",
+  "version": "0.0.0",
+  "description": "assorted string utility functions",
+  "main": "index.ts",
+  "author": "matt.straat@gmail.com",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": true
+}
