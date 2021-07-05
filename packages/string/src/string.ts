@@ -8,7 +8,7 @@ export const toSnakeCase = (text: string): string => text
     if (c === c.toUpperCase()) {
       return `_${c.toLowerCase()}`;
     }
-    return "";
+    return c;
   })
   .join("");
 
