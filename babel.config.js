@@ -44,7 +44,7 @@ module.exports = {
                 ]
             ],
             "plugins": [
-                ["emotion", {
+                ["@emotion", {
                     "inline": true,
                     "sourceMap": true
                 }],
