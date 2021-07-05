@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/bruuuuuuuce/packages/compare/@straathof/string@0.1.2...@straathof/string@0.2.0) (2021-07-05)
+
+
+### Features
+
+* add unit test to buld ([c7ef7b5](https://github.com/bruuuuuuuce/packages/commit/c7ef7b5d8fbe8511ec8dad9087f9320f45fa4ef2))
+
+
+
+
+
 ## [0.1.2](https://github.com/bruuuuuuuce/packages/compare/@straathof/string@0.1.1...@straathof/string@0.1.2) (2021-07-04)
 
 
